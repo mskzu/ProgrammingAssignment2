@@ -3,7 +3,9 @@
 
 ## Write a short comment describing this function
 
-# makeCacheMatrix function
+# function makeCacheMatrix(matrix)
+#  make matrix wrapper list object
+#
 #  $set(matrix) : set matrix
 #  $get() : get matrix
 #  $setinverse() : set inverse matrix
@@ -13,6 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
     x <<- y
+    # make cached value invalid
     inv <<- NULL
   }
   get <- function() x
@@ -26,10 +29,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-# cacheSolve function
+# function cacheSolve(cachematrix)
 #  return inverse matrix of cacheMatrix
 #  if already calculated, return cached value.
-#  cacheMatrix is created with makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
