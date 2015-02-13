@@ -1,6 +1,14 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+# function makeCacheMatrix(matrix)
+#  create cacheMatrix
+#
+# function cacheSolve(cacheMatrix)
+#  returns inverse matrix of cacheMatrix
+#  if already calculated, returns cached value.
+
+
 ## Write a short comment describing this function
 
 # function makeCacheMatrix(matrix)
@@ -29,9 +37,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-# function cacheSolve(cachematrix)
-#  return inverse matrix of cacheMatrix
-#  if already calculated, return cached value.
+# function cacheSolve(cacheMatrix)
+#  returns inverse matrix of cacheMatrix
+#  if already calculated, returns cached value.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
