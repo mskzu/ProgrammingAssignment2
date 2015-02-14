@@ -2,20 +2,19 @@
 ## functions do
 
 # function makeCacheMatrix(matrix)
-#  create cacheMatrix
+#  make cacheMatrix
 #
 # function cacheSolve(cacheMatrix)
-#  returns inverse matrix of cacheMatrix
-#  if already calculated, returns cached value.
-
+#  returns the inverse matrix of the cacheMatrix
+#  if already calculated, returns the cached matrix.
 
 ## Write a short comment describing this function
 
 # function makeCacheMatrix(matrix)
-#  make matrix wrapper list object
+#  make cacheMatrix
 #
 #  $set(matrix) : set matrix
-#  $get() : get matrix
+#  $get()       : get matrix
 #  $setinverse() : set inverse matrix
 #  $getinverse() : get inverse matrix
 
@@ -23,7 +22,6 @@ makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
     x <<- y
-    # make cached value invalid
     inv <<- NULL
   }
   get <- function() x
@@ -38,8 +36,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 # function cacheSolve(cacheMatrix)
-#  returns inverse matrix of cacheMatrix
-#  if already calculated, returns cached value.
+#  returns the inverse matrix of the cacheMatrix
+#  if already calculated, returns the cached matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
